@@ -42,4 +42,21 @@ document.addEventListener("DOMContentLoaded", function() {
                 this.play();
             }, false);
     });
+
+    $(document).on("click", "a#loadtext", function(event) {
+        console.log("link clicked");
+        event.preventDefault();
+        $('div#modal-inputtext').addClass("active");
+    });
+
+    $(document).on("click", "a#modal-close-btn", function(event) {
+        $('div#modal-inputtext').removeClass("active");
+    });
+
+    $(document).on("click", "button#inputtext-sbmt", function(event) {
+        event.preventDefault();
+        console.log("text val:", $('textarea#inputtext').val());
+        $('div.content').text($('textarea#inputtext').val());
+    });
+
 });
