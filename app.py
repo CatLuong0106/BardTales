@@ -5,8 +5,7 @@ from flask import Flask, render_template, request, send_file
 # import pandas as pd
 from werkzeug.utils import secure_filename
 # from sqlalchemy.sql import func
-
-
+from pipelineutils import *
 
 def create_app(test_config=None):
 
@@ -27,8 +26,19 @@ def create_app(test_config=None):
 
     @app.route('/getaudio', methods=['GET', 'POST'])
     def getaudio():
-        # sample-file-4.wav
-        return send_file('sample-file-4.wav',
+        data = request.json.get('text')
+        print(data)
+
+        print("Generating speech")
+        text_to_speech(data)
+        print("Generating music")
+        music_gen(data)
+        print("Combining speech and music")
+        combine()
+
+        print("Returning audio file")
+
+        return send_file('mixed.wav',
                         mimetype='audio/wav')
                         # as_attachment=True)
 
@@ -39,3 +49,11 @@ def create_app(test_config=None):
         return render_template('mainpage.html')
 
     return app
+
+if __name__ == "__main__":
+    app = create_app()
+    app.run(debug=True)
+
+
+
+

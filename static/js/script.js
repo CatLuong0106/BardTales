@@ -5,11 +5,45 @@ document.addEventListener("DOMContentLoaded", function() {
         event.preventDefault();
         console.log("button clicked");
         // $('audio').prop("src", );
+        
+        //get me div with id "study-text" and get the text from it
+        var text = $('div.content').text();
+        //strip the text of any leading or trailing whitespace
+        text = text.replace(/(\r\n|\n|\r)/gm, "");
+        text = text.trim();
 
-        $('audio').attr("src", 'sample-file-4.wav');
+        console.log("text:", text);
 
-        var aud = document.getElementById('audioplayer');
-        aud.play();
+        //send the text to the server
+        $.ajax({
+            url: "/getaudio",
+            type: "POST",
+            data: JSON.stringify({text: text}),
+            contentType: "application/json",
+            success: function(data) {
+                console.log(data);
+                // $('audio #source').attr("src", data);
+
+                $('audio').attr("src", data);
+                // $('audio').load();
+                // $('audio').play();
+
+                // var aud = document.getElementById('audioplayer');
+                // aud.play();
+
+                // $('audio').get(0).load();
+                // $('audio').get(0).play();
+
+                $('audio').attr("src", 'mixed.wav');
+
+                var aud = document.getElementById('audioplayer');
+                aud.play();
+
+            }
+        });
+
+
+        
 
         // $('audio').load();
         // $('audio').play();
