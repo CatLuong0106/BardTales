@@ -24,20 +24,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log(data);
                 // $('audio #source').attr("src", data);
 
-                $('audio').attr("src", data);
+                $('audio').attr("src", 'mixed.wav');
                 // $('audio').load();
                 // $('audio').play();
 
-                // var aud = document.getElementById('audioplayer');
-                // aud.play();
+                var aud = document.getElementById('audioplayer');
+                aud.play();
 
                 // $('audio').get(0).load();
                 // $('audio').get(0).play();
 
-                $('audio').attr("src", 'mixed.wav');
 
-                var aud = document.getElementById('audioplayer');
-                aud.play();
+
+               
 
             }
         });

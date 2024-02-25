@@ -24,6 +24,15 @@ def create_app(test_config=None):
                         # as_attachment=True,
                         # attachment_filename="test.wav")
 
+
+    @app.route('/mixed.wav')
+    def getresultwav():
+        return send_file('mixed.wav',
+                        mimetype='audio/wav')
+                        # as_attachment=True,
+                        # attachment_filename="test.wav")
+
+
     @app.route('/getaudio', methods=['GET', 'POST'])
     def getaudio():
         data = request.json.get('text')

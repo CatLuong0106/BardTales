@@ -91,12 +91,20 @@ div#controls {
     backdrop-filter: blur(10px);
 }
 
+
+a#loadtext {
+    color: black;
+    font-size: 70px;
+    text-decoration: none;
+}
+
+
 div#banner {
     position: fixed;
     top: 50px;
     left: 50px;
-    font-size: 48px;
-    font-family: "Inter", sans-serif;
+    font-size: 96px;
+    font-family: "Tangerine", sans-serif;
     font-weight: 700;
 
     /* background-color: #e7dccf;
