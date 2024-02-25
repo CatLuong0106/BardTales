@@ -13,8 +13,20 @@ from botocore.exceptions import BotoCoreError, ClientError
 from contextlib import closing
 from tempfile import gettempdir
 
+import google.generativeai as genai
+
+
+
 def llm(prompt: str) -> str: 
-    pass
+    cred_path = r'D:\development\audiocraft-repo\5052_revUC2024\gcpcred.json'
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = cred_path
+
+    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+    generation_config = {"temperature": 0.9, "top_p": 1, "top_k": 1, "max_output_tokens": 2048}
+    model = genai.GenerativeModel("gemini-pro", generation_config=generation_config)
+    response = model.generate_content([prompt])
+    print(response.text)
+    return response.text
 
 def textfile_to_speech(input_path: str) -> None:
     # Assuming your JSON file is named 'data.json'
@@ -95,7 +107,7 @@ def text_to_speech(input_txt: str) -> None:
     session = Session(
         aws_access_key_id=credentials['AWS_ACCESS_KEY_ID'],
         aws_secret_access_key=credentials['AWS_SECRET_ACCESS_KEY'],
-        aws_session_token=credentials['AWS_SESSION_TOKEN'],  # if using temporary credentials
+        # aws_session_token=credentials['AWS_SESSION_TOKEN'],  # if using temporary credentials
         region_name=credentials['AWS_DEFAULT_REGION'],
     )
     polly = session.client("polly")

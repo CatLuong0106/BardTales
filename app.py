@@ -35,13 +35,36 @@ def create_app(test_config=None):
 
     @app.route('/getaudio', methods=['GET', 'POST'])
     def getaudio():
+        prompt = """
+        Use this template: 
+
+        Grandeur: Majestic, grand, monumental, heroic
+        Orchestral: Symphonic, lush, rich, full-bodied
+        Intensity: Powerful, dramatic, intense, thrilling
+        Emotion: Emotional, poignant, moving, stirring
+        Epic Scale: Massiv, expansive, vast, larger-than-life
+        Dynamic Range: Dynamic, constrast, crescendos, swells
+        Chorus: Choral, choir, vocal, harmonies 
+        Percussion: Percussive, driving, rhythmic, thunderous
+        Melodic Themes: Memorable, catchy, thematic, motifs
+        Building Tension: Suspenseful, building, climactic, anticipation
+        Cinematic Sound Design: Textured, atmospheric, immersive, soundscapes
+        Instrumentation: Bass, strings, woodwinds, percussion, synthesizers
+        Momentum: Energetic, propulsive, relentless, pulse sounding
+        Imagery: Evocative, visual, picturesque, storytelling
+        Heroic Journey: Triumph, resolve, determination, perserverance
+
+        Make a similar prompt but not exactly for an audio that encapsulates the content of this text: 
+
+        """
         data = request.json.get('text')
         print(data)
 
         print("Generating speech")
         text_to_speech(data)
         print("Generating music")
-        music_gen(data)
+        prompt = llm(prompt + data)
+        music_gen(prompt)
         print("Combining speech and music")
         combine()
 
