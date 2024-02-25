@@ -74,7 +74,33 @@ def create_app(test_config=None):
         finally:
             if conn is not None:
                 conn.close()
-
+    @app.route('/getAudioList', methods = ['GET'])
+    def getAudioList():
+        username = request.args['username']
+        conn = None
+        try:
+            conn = psycopg2.connect(database = config.connectionPool['database'], 
+                        user = config.connectionPool['user'], 
+                        host= config.connectionPool['host'],
+                        password = config.connectionPool['password'],
+                        port = config.connectionPool['port'])
+            qr = conn.cursor()
+            qr.execute(f"SELECT username, text, encode(audiofile, 'base64') FROM Audio_Data where username = '{username}';")
+            audioList = qr.fetchall()
+            conn.commit()
+            return {
+            'audioList': audioList,
+            'status': 200
+        }
+        except Exception as e:
+            print(e)
+            return {
+                'audioList': None,
+                'status': 500
+            }
+        finally:
+            if conn is not None:
+                conn.close()
     return app
 
 if __name__ == "__main__":
