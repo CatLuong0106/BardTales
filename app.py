@@ -22,7 +22,8 @@ def create_app(test_config=None):
     def getwav():
         return send_file('sample-file-4.wav',
                         mimetype='audio/wav')
-    
+                        # as_attachment=True,
+                        # attachment_filename="test.wav")
 
     @app.route('/getaudio', methods=['GET', 'POST'])
     def getaudio():
