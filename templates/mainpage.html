@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="banner">
+    <p class="h3">App Name</p> 
+</div>
+
+<div id="container">
+
+    <div class="tablet">
+        <!-- <iframe src="data.html" style="width:100%;border:none;height:100%" /> -->
+        <div class="content" style="width:100%;border:none;height:100%">
+        Once upon a time there was a dear little girl who was loved by every one who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child. Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else. So she was always called Little Red Riding Hood.
+
+One day her mother said to her, "Come, Little Red Riding Hood, here is a piece of cake and a bottle of wine. Take them to your grandmother, she is ill and weak, and they will do her good. Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing. And when you go into her room, don't forget to say, good-morning, and don't peep into every corner before you do it."
+
+I will take great care, said Little Red Riding Hood to her mother, and gave her hand on it.
+
+        </div>
+
+        <div id="controls">
+            <button id="playbtn" class="btn btn-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16"> <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/> </svg>
+            </button>
+        </div>
+       
+    </div>
+
+    <!-- <div class="columns">
+
+
+        <div class="column col-3">
+            <div id="banner" class="card">
+                <div id=banner-header" class="card-header">
+                    <p class="h3">App Name</p> 
+                </div>
+                <p class="">
+
+                </p>
+
+                <div class="card-body controls">
+                    <button id="playbtn" class="btn btn-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16"> <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/> </svg>
+                    </button>
+                </div>
+        
+            </div>
+        </div>
+        <div class="column col-9 tablet">
+            <p class="content" style="width:100%;border:none;height:100%">
+            Once upon a time there was a dear little girl who was loved by every one who looked at her, but most of all by her grandmother, and there was nothing that she would not have given to the child. Once she gave her a little cap of red velvet, which suited her so well that she would never wear anything else. So she was always called Little Red Riding Hood.
+
+    One day her mother said to her, "Come, Little Red Riding Hood, here is a piece of cake and a bottle of wine. Take them to your grandmother, she is ill and weak, and they will do her good. Set out before it gets hot, and when you are going, walk nicely and quietly and do not run off the path, or you may fall and break the bottle, and then your grandmother will get nothing. And when you go into her room, don't forget to say, good-morning, and don't peep into every corner before you do it."
+
+    I will take great care, said Little Red Riding Hood to her mother, and gave her hand on it.
+            </p>
+        </div>
+    </div> -->
+
+</div>
+
+<!-- <audio controls> -->
+<!-- <audio src="" type="audio/wav" controls> -->
+<audio id="audioplayer" type="audio/wav" src="" controls>
+    <!-- <source id="source" src="sample-file-4.wav" type="audio/wav"> -->
+    <!-- <source id="source" src="" type="audio/wav"> -->
+    Your browser does not support the audio element.
+</audio>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="{{ url_for('static', filename= 'js/script.js') }}" crossorigin="anonymous"></script>
+</body>
+</html>

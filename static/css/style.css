@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap');
+
+/* h1 {
+    // border: 2px #eee solid;
+    // color: brown;
+    text-align: center;
+    // padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+} */
+
+div#container {
+    margin: 0.6em;
+    padding: 1em;
+    background-color: #efe6dd;
+    border-radius: 0.3em;
+}
+
+body {
+    background: #f1f1f1;
+}
+  
+  /* The device with borders */
+.tablet {
+    position: relative;
+    width: 768px;
+    height: 1024px;
+margin: auto;
+border: 16px black solid;
+border-top-width: 60px;
+border-bottom-width: 60px;
+border-radius: 36px;
+}
+  
+/* The horizontal line on the top of the device */
+.tablet:before {
+content: '';
+display: block;
+width: 60px;
+height: 5px;
+position: absolute;
+top: -30px;
+left: 50%;
+transform: translate(-50%, -50%);
+background: #333;
+border-radius: 10px;
+}
+  
+/* The circle on the bottom of the device */
+.tablet:after {
+content: '';
+display: block;
+width: 35px;
+height: 35px;
+position: absolute;
+left: 50%;
+bottom: -65px;
+transform: translate(-50%, -50%);
+background: #333;
+border-radius: 50%;
+}
+  
+/* The screen (or content) of the device */
+.tablet .content {
+/* from w3school */
+width: 768px;
+/* height: 1024px; */
+/* height: 824px; */
+max-height: 800px;
+/* background: white; */
+/* margin: -1px; */
+
+background-color: #f5e1ca;
+/* custom */
+padding: 20px;
+
+  font-family: "Cutive", serif;
+  font-weight: 400;
+  font-size: 32px;
+  font-style: normal;
+  overflow: scroll;
+}
+
+div#controls {
+    /* position: absolute;
+    bottom: 0; */
+    /* width: 100%; */
+    background-color: #f5e1ca;
+    text-align: center;
+    backdrop-filter: opacity(50%);
+    backdrop-filter: blur(10px);
+}
+
+div#banner {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+
+    /* background-color: #e7dccf;
+    border-radius: 10px; */
+    /* border-bottom: black; */
+    /* border-style: inset; */
+    /* border-bottom: #e7dccfe7;
+    border-left: #e7dccfe7;
+    border-right: #e7dccfe7;
+    border-bottom-width: 3px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+}
+
+button#playbtn {
+    width: fit-content;
+    height: fit-content;
+    /* height: 100px;
+    width: 100px; */
+}
+
+
+/* button#playbtn svg {
+        position: relative;
+		height: 8.8em;
+		margin-right:10px;
+		top: 0px;
+} */
+/* div#sbmt-btn {
+    margin-top: 3em;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+}
+
+p#statusmsg {
+    margin-top: 2em;
+} */
