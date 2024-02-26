@@ -1,0 +1,15 @@
+name: revuc24  # replace with your desired environment name
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  - python=3.9.13  # or whichever version you prefer
+  - pip
+  - ffmpeg
+  - pytorch==2.1.0
+  - torchvision==0.16.0
+  - torchaudio==2.1.0
+  - pytorch-cuda=12.1
+  - pip:
+    - -r requirements.txt
