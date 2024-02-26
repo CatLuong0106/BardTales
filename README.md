@@ -10,4 +10,5 @@ python3 app.py
 
 # Roles
 **Cat Luong:** Spearheaded AI-powered backend architectural design. Performed prompt engineering on Gemini Pro. Integrated Google Gemini Pro, Meta Audiocraft, and AWS Polly into a pipeline that accepts story text and returns an audiobook.
+
 **Sparsh Priyadarshi:** Scoping study for generative AI based audio synthesis and AWS Polly. Defined Product-Market fit for the MVP. Integrated UI and audiobook generation pipeline, contributed to business logic for audio processing, design and documentation.
