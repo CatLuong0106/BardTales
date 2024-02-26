@@ -6,7 +6,7 @@
 conda env create -f envinronment.yml
 python3 app.py
 ```
-*The server should be up and running on localhost address 127.0.0.1:5000. Open this url in a url to access the web application.*
+*The server should be up and running on localhost address 127.0.0.1:5000. Open this url in a browser to access the web application.*
 
 # Roles
 **Cat Luong:** Spearheaded AI-powered backend architectural design. Performed prompt engineering on Gemini Pro. Integrated Google Gemini Pro, Meta Audiocraft, and AWS Polly into a pipeline that accepts story text and returns an audiobook.
