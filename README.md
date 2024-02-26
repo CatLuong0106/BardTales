@@ -4,4 +4,4 @@
 
 
 # Roles
-Cat Luong: Spearheaded AI-powered backend architectural design. Performed prompt engineering on Gemini Pro. Integrated Google Gemini Pro, Meta Audiocraft, and AWS Polly into a pipeline that accepts story text and returns an audiobook.
+**Cat Luong:** Spearheaded AI-powered backend architectural design. Performed prompt engineering on Gemini Pro. Integrated Google Gemini Pro, Meta Audiocraft, and AWS Polly into a pipeline that accepts story text and returns an audiobook.
