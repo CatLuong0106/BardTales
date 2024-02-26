@@ -1,5 +1,5 @@
 # BardTales RevolutionUC 2024
-# Winners of RevolutionUC 2024 Best Implementation of an LLM or Other Generative AI Model (CincyTech) and Best Product Market Fit (Center for Entrepreneurship) 
+# Winner of RevolutionUC 2024 Best Implementation of an LLM or Other Generative AI Model (CincyTech) and Best Product Market Fit (Center for Entrepreneurship) 
 # Setup
 **Deploy the webapp on your local machine using**:
 ```
