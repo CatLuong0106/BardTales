@@ -1,4 +1,4 @@
-# 5052_revUC2024
+# BardTales RevolutionUC 2024
 
 `conda env create -f envinronment.yml`
 
