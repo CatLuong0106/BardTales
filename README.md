@@ -15,7 +15,7 @@ python3 app.py
 
 **Vivek Mehra**: Designed & developed the UI frontend & backend. Contributed to application backend & audio pipeline integration debugging, contributed to system architecture design discussions.
 
-** Ziddi Mohammad: ** Integrated Tembo's PostgreSQL into the system and developed a couple of APIs to store and retrieve generated audios data based on userIds and contributed to system design.
+**Ziddi Mohammad:** Integrated Tembo's PostgreSQL into the system and developed a couple of APIs to store and retrieve generated audios data based on userIds and contributed to system design.
 
 # Citation
 
