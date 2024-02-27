@@ -13,6 +13,7 @@ python3 app.py
 
 **Sparsh Priyadarshi:** Scoping study for generative AI based audio synthesis and AWS Polly. Defined Product-Market fit for the MVP. Integrated UI and audiobook generation pipeline, contributed to business logic for audio processing, design and documentation.
 
+**Vivek Mehra**: Designed & developed the UI frontend & backend. Contributed to application backend & audio pipeline integration debugging, contributed to design discussions for system architecture.
 
 # Citation
 
