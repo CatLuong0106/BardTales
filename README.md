@@ -1,5 +1,5 @@
 # BardTales RevolutionUC 2024
-# Winner of RevolutionUC 2024 Best Implementation of an LLM or Other Generative AI Model (CincyTech) and Best Product Market Fit (Center for Entrepreneurship) 
+# ✨ Winner of RevolutionUC 2024 Best Implementation of an LLM or Other Generative AI Model (CincyTech) and Best Product Market Fit (Center for Entrepreneurship) ✨
 # Setup
 **Deploy the webapp on your local machine using**:
 ```
@@ -13,7 +13,7 @@ python3 app.py
 
 **Sparsh Priyadarshi:** Scoping study for generative AI based audio synthesis and AWS Polly. Defined Product-Market fit for the MVP. Integrated UI and audiobook generation pipeline, contributed to business logic for audio processing, design and documentation.
 
-**Vivek Mehra**: Designed & developed the UI frontend & backend. Contributed to application backend & audio pipeline integration debugging, contributed to design discussions for system architecture.
+**Vivek Mehra**: Designed & developed the UI frontend & backend. Contributed to application backend & audio pipeline integration debugging, contributed to system architecture design discussions.
 
 # Citation
 
